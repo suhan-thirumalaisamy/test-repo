@@ -93,7 +93,7 @@ revolte:
           properties:
             health: /health
             port: 3000
-            loadBalancerMode: shared
+            loadBalancerMode: dedicated
             variables:
               BASE_URL: /api/v1
           specifications:
