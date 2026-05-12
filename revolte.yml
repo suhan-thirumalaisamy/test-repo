@@ -9,9 +9,14 @@ revolte:
       commentStyle: Balanced
     testSuite:
       command: npm run test
+  workflow:
+    developerWorkflow:
+      enabled: true
   env:
     staging:
-      branch: main
+      branch: staging
+      codeReview: false
+      testSuite: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -28,7 +33,9 @@ revolte:
             memory: 1
             storage: 30
     qa:
-      branch: main
+      branch: qa
+      codeReview: false
+      testSuite: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -46,6 +53,8 @@ revolte:
             storage: 30
     production:
       branch: main
+      codeReview: false
+      testSuite: false
       services:
         rid_1:
           type: WEB_SERVICE
@@ -74,6 +83,8 @@ revolte:
                 scaleDown:
                   stabilizationWindow: 300
     preview:
+      codeReview: false
+      testSuite: false
       services:
         rid_1:
           type: WEB_SERVICE
