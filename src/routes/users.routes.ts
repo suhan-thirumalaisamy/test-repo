@@ -13,7 +13,7 @@ const users = [
  * GET /users
  * Returns the list of all users
  */
-router.get("/users", (req: Request, res: Response) => {
+router.get("/qa/users", (req: Request, res: Response) => {
   res.status(200).json({
     success: true,
     count: users.length,
