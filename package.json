@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
+  "engines": {
+    "node" : ">=22.x"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node index.js",
