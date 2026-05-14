@@ -43,7 +43,7 @@ revolte:
           entryPoint: index.js
           properties:
             health: /health
-            port: 3000
+            port: 3001
             loadBalancerMode: shared
             variables:
               BASE_URL: /api/v1
